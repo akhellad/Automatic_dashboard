@@ -77,11 +77,11 @@ def run_app():
     excel_entry = create_file_selection_section(root, "Sélectionner le fichier Excel:", 1, select_excel_file)
     img_entry = create_file_selection_section(root, "Sélectionner le dossier des images:", 2, select_images_folder)
 
-    width_entry = create_dimension_input_section(root, "Largeur des cartes (en pixels) :", 5, str(int(5.75 * 96)))
-    height_entry = create_dimension_input_section(root, "Hauteur des cartes (en pixels) :", 6, str(int(5.75 * 96)))
+    width_entry = create_dimension_input_section(root, "Largeur des cartes (en pixels) :", 3, str(int(5.75 * 96)))
+    height_entry = create_dimension_input_section(root, "Hauteur des cartes (en pixels) :", 4, str(int(5.75 * 96)))
 
     step_text = tk.StringVar()
-    tk.Label(root, textvariable=step_text, font=("Helvetica", 10, "italic"), bg="#f5f5f5", fg="#555").grid(row=7, column=0, columnspan=4, padx=10, pady=10)
+    tk.Label(root, textvariable=step_text, font=("Helvetica", 10, "italic"), bg="#f5f5f5", fg="#555").grid(row=5, column=0, columnspan=4, padx=10, pady=10)
 
     progress_var, progress_bar, secondary_progress_var, secondary_progress_bar = create_progress_bars(root)
 
